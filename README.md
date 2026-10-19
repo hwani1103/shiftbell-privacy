@@ -1,8 +1,10 @@
-# 교대시계(ShiftBell) 개인정보처리방침 / Privacy Policy
+# ShiftBell 개인정보처리방침 / Privacy Policy
 
 ## 한국어
 
-최종 수정: 2026년 10월 12일.
+기능 및 데이터 처리 범위는 설치된 버전과 사용자가 켠 기능에 따라 달라집니다. 이 방침의 갱신이 새 앱 버전의 공개 완료를 의미하지는 않습니다.
+
+최종 수정: 2026년 10월 19일.
 
 교대시계에서 만드는 데이터는 기본적으로 사용자의 기기에 저장됩니다. 아래에서는 기기에 저장되는 정보, Google 서비스를 통해 처리되는 정보와 사용자가 문의할 때 개발자에게 전달되는 정보를 안내합니다.
 
@@ -16,13 +18,17 @@
 
 설정 → 부가 기능 → 진단 로그 이메일로 보내기를 누르면 공유용 .txt 파일을 앱의 임시 폴더에 만듭니다. 전송은 사용자가 메일 앱에서 직접 완료합니다. 이메일로 보내면 로그 파일, 메일에 적은 내용과 발신자 이메일 주소가 개발자에게 전달됩니다. 교대시계는 이메일 계정 정보에 접근하거나 로그를 자동 전송하지 않습니다.
 
+수면·회복 기능의 수면 시작·종료 시각과 확인 상태도 기기에 저장됩니다. 수면 추정은 기능을 켠 경우에만 화면 꺼짐과 충전 상태를 주기적으로 확인해 기기 안에서 처리합니다. 이 관찰값이나 수면 기록 내용을 서버로 전송하지 않습니다.
+
 ### 사용 통계(Google Firebase Analytics)
 
 앱을 개선하기 위해 Google Firebase Analytics가 앱 실행·화면 이용 같은 이용 기록, 앱 버전, 기기 종류·OS 버전, 대략적인 지역 정보와 앱 설치별 식별자를 자동으로 수집합니다. 또 어떤 기능이 얼마나 쓰이는지 알 수 있도록 알람 끄기·다시 알림 횟수, 메모·일정·수면 기록·백업 같은 기능을 사용한 횟수만 함께 기록합니다. 웹 뷰어에서 친구 근무표를 정상적으로 연 횟수는 앱 사용과 별도로 집계하며, 공유 코드나 친구 이름은 이 이벤트에 넣지 않습니다. 근무표·메모·수면 기록·알람 시각 같은 앱 데이터의 내용은 통계에 넣지 않습니다. 수집된 통계는 Google의 개인정보처리방침에 따라 처리됩니다.
 
 앱 안정성을 확인하기 위해 알람 예약·울림 진입·갱신 및 기기 재부팅 관측 횟수, 권한과 배터리 제한 상태의 분류, 기기 제조사 범주를 Google Firebase Analytics로 전송할 수 있습니다. 원본 진단 파일이나 알람 식별자·시각, 근무표·메모·수면 기록의 내용은 이 통계에 포함하지 않습니다. 일부 관측은 다음 앱 실행 때 전송되어 실제 발생 시점과 보고 날짜가 다를 수 있습니다.
 
-### 일정공유 기능을 쓰는 경우(Google Firebase)
+수면 기능 사용 횟수 같은 이벤트는 통계에 포함될 수 있지만, 수면 시작·종료 시각과 수면 기록 내용은 포함하지 않습니다.
+
+### 일정공유·공휴일 갱신(Google Firebase)
 
 '일정공유'를 켜면 친구에게 보여줄 이름과 근무 스케줄(근무 패턴·시작일·근무별 색상·날짜별 근무 변경)이 Google Firebase 서버에 저장되고, 공유 코드나 링크를 가진 사람은 누구나 볼 수 있습니다. 이를 위해 앱이 자동으로 만드는 익명 식별자가 함께 쓰이며, 메모·OT·수면 기록·알람 설정은 전송하지 않습니다.
 
@@ -30,7 +36,7 @@
 
 앱을 삭제하고 다시 설치하면 새 익명 식별자가 만들어져, 이전에 공유한 데이터를 앱에서 지울 수 없게 됩니다. 재설치 전에 공유를 중지해 주세요.
 
-한국 공휴일 변경분을 확인하려고 Firebase의 공개 문서를 드물게 읽습니다. 이 조회에 근무표·수면 기록 등 앱 내용은 보내지 않습니다. 업데이트 가능 여부는 Google Play에서 확인합니다.
+기기 로캘에서 한국 공휴일을 사용하는 경우, 한국 공휴일 변경분을 확인하려고 Firebase의 공개 문서를 드물게 읽습니다. 이 조회에 근무표·수면 기록 등 앱 내용은 보내지 않습니다. 업데이트 가능 여부는 Google Play에서 확인합니다.
 
 이전 버전은 Firebase의 공개 업데이트 설정을 읽을 수 있으며, 이 조회에 근무표나 메모 내용을 넣지 않습니다.
 
@@ -39,6 +45,8 @@
 앱 화면 일부에 Google AdMob 배너 광고가 표시됩니다. 광고 제공과 성과 측정을 위해 광고 SDK가 기기 식별자, IP 주소, 앱 상호작용 및 진단 정보를 처리할 수 있습니다. 앱은 근무표·알람 시각·메모 내용을 광고 요청에 넣지 않습니다.
 
 Google의 동의 시스템에서 요구하는 경우 광고 관련 선택을 요청합니다. 설정에 광고 개인정보 설정이 표시되면 선택을 다시 확인하거나 변경할 수 있습니다. Google의 정보 처리 방식은 Google 개인정보처리방침에서 확인할 수 있습니다.
+
+수면 기록 내용도 광고 요청에 포함하지 않습니다.
 
 ### 앱이 요청하는 권한
 
@@ -49,6 +57,8 @@ Google의 동의 시스템에서 요구하는 경우 광고 관련 선택을 요
 권한을 허용하지 않아도 앱은 계속 쓸 수 있지만, 위 기능 중 일부가 제한될 수 있습니다.
 
 • 잠금화면 알람 표시: 휴대전화가 잠겼을 때 알람 화면을 표시하기 위한 전체 화면 알림 권한입니다.
+
+수면·회복 기능을 켠 경우에는 수면 추정 상태를 주기적으로 확인하는 예약에도 정확한 알람 기능을 사용합니다.
 
 ### 데이터 보관 및 삭제
 
@@ -68,6 +78,8 @@ Download/ShiftBell/log의 진단 파일도 앱 삭제 후 남을 수 있습니�
 
 개발자가 이메일로 받은 문의 내용, 발신자 이메일 주소와 진단 첨부파일은 문의 대응과 문제 확인을 위해 사용하며, 문의 해결 후 30일 이내에 삭제합니다. lowvibe07@gmail.com으로 삭제를 요청하면 지체 없이 삭제합니다. 메일 서비스가 별도로 보관하는 사본에는 해당 서비스의 정책이 적용됩니다.
 
+수면 기록도 백업에 포함됩니다. 수면·회복 기능을 끄거나 탭을 숨겨도 이미 저장한 수면 기록은 삭제되지 않습니다.
+
 ### 아동 대상 서비스가 아닙니다
 
 본 앱은 만 14세 미만 아동을 대상으로 하지 않으며, 아동의 개인정보를 의도적으로 수집하지 않습니다.
@@ -79,11 +91,13 @@ Download/ShiftBell/log의 진단 파일도 앱 삭제 후 남을 수 있습니�
 • 카카오톡 오픈채팅: '교대시계 앱' 검색
 • 개발자 이메일: lowvibe07@gmail.com
 
-기능과 데이터 처리 범위는 설치된 버전 및 사용자가 켠 기능에 따라 달라집니다. 이 방침 갱신이 새 앱 버전의 공개 완료를 뜻하지는 않습니다.
+Google Privacy Policy
 
 ## English
 
-Last updated: October 12, 2026.
+Available features and data processing depend on the installed version and enabled features. This policy update does not announce a completed app release.
+
+Last updated: October 19, 2026.
 
 Your shift and alarm data is stored on your device. ShiftBell also uses Google services for usage statistics and advertising. This policy explains those services and local files.
 
@@ -95,6 +109,8 @@ On Android 10 or later, diagnostic files are saved locally in Download/ShiftBell
 
 Settings → Additional features → Email diagnostic log creates a .txt attachment in the app’s temporary folder. You complete sending in your email app. Sending an email gives the developer the log file, the message you write and your sender email address. ShiftBell does not access your email account information or send logs automatically.
 
+Sleep start and end times and confirmation status are also stored on your device. When Sleep & Recovery is enabled, sleep estimation periodically checks screen-off and charging status and processes them on the device. These observations and the contents of sleep records are not sent to a server.
+
 ### Usage statistics (Google Firebase Analytics)
 
 Google Firebase Analytics collects usage and device information, such as app opens, screen views, app and operating-system versions, device model, approximate region and an installation identifier. ShiftBell also records feature-use events, such as dismissing or snoozing an alarm, saving a note or creating a backup.
@@ -103,7 +119,11 @@ These events do not include shift names, alarm times, note text or other schedul
 
 To assess app reliability, ShiftBell may send counts of observed alarm scheduling, alarm entry, refresh and device reboot events, categories of permission and battery restrictions, and a device manufacturer category to Google Firebase Analytics. These statistics exclude original diagnostic files, alarm identifiers and times, and the contents of your schedules and notes. Some observations are sent when you next open the app, so reporting dates may differ from occurrence dates.
 
-### App updates
+Analytics may include events counting use of sleep features, but exclude sleep start and end times and the contents of sleep records.
+
+### App updates and holiday updates
+
+When your device locale selects South Korean holidays, the app occasionally reads a public Firebase document for holiday updates, regardless of the screen language. These requests do not include schedule contents, notes or sleep records.
 
 App update availability is checked through Google Play.
 
@@ -115,6 +135,8 @@ ShiftBell displays Google AdMob banner ads. The advertising SDK may process devi
 
 Where required by Google’s consent system, the app asks for your advertising choices. When available, use Ad Privacy Settings in Settings to review them. Google’s privacy policy describes how Google handles this information.
 
+The contents of sleep records are also excluded from ad requests.
+
 ### Permissions the app requests
 
 • Notifications: show alarm status and pre-alarm reminders.
@@ -124,6 +146,8 @@ Where required by Google’s consent system, the app asks for your advertising c
 You can review these permissions in Android Settings. Declining them may limit alarm notifications or prevent alarms from working as expected.
 
 • Lock screen display: allow full-screen notifications to show the alarm screen while the phone is locked.
+
+When Sleep & Recovery is enabled, exact alarms are also used to schedule periodic sleep-estimation checks.
 
 ### Data retention and deletion
 
@@ -141,6 +165,8 @@ Data created in earlier versions may remain on your device until you delete it o
 
 The developer uses emailed support messages, sender email addresses and diagnostic attachments to respond to inquiries and investigate issues, and deletes them within 30 days after the inquiry is resolved. Deletion requests sent to lowvibe07@gmail.com are handled without undue delay. Copies retained separately by the email service are governed by that service’s policy.
 
+Backups also contain sleep records. Turning off Sleep & Recovery or hiding its tab does not delete previously saved sleep records.
+
 ### Not directed at children
 
 This app is not directed at children under 14, and we do not knowingly collect personal information from children.
@@ -150,17 +176,21 @@ This app is not directed at children under 14, and we do not knowingly collect p
 For app support and privacy questions:
 lowvibe07@gmail.com
 
-### Korean interface and earlier versions
+### Earlier versions: Korean interface and earlier versions
 
-Some features are available only in the Korean interface. Local events, sleep records and contacts from those features can remain on the device after switching languages. Automatic sleep estimation checks screen and charging state locally.
+Personal events and contact management remain specific to the Korean interface. Their stored data can remain on the device after changing languages. Sleep records and local sleep estimation are described above for versions that provide optional Sleep & Recovery in additional languages.
 
 If you enable schedule sharing in the Korean interface or used it in an earlier version, Firebase stores the display name and shared roster (pattern, start date, shift colors and date-specific changes) with an anonymous identifier. Anyone with the code or link can view it. Notes, overtime, sleep records and alarm settings are not included. Stopping sharing requests removal of shared contents; v2 may retain revocation/version metadata to prevent stale uploads from restoring them. Offline requests may be delayed, and downloaded copies cannot be recalled. Stop sharing before reinstalling: a new anonymous identity may prevent deletion of old shared data from the app. Contact lowvibe07@gmail.com for assistance.
 
 The Korean interface reads public holiday corrections from Firebase without including schedule contents. Successful shared-calendar web views are counted separately; these events exclude share codes and contact names. Local features and data processing depend on the installed version and enabled features; this notice does not mean the new version is already available.
 
+Google Privacy Policy
+
 ## Deutsch
 
-Zuletzt aktualisiert: 12. Oktober 2026.
+Verfügbare Funktionen und Datenverarbeitung hängen von der installierten Version und den aktivierten Funktionen ab. Die Aktualisierung dieser Erklärung kündigt keine abgeschlossene App-Veröffentlichung an.
+
+Zuletzt aktualisiert: 19. Oktober 2026.
 
 Deine Schicht- und Weckerdaten werden auf deinem Gerät gespeichert. ShiftBell nutzt auch Google-Dienste für Nutzungsstatistiken und Werbung. Diese Erklärung beschreibt diese Dienste und lokale Dateien.
 
@@ -172,6 +202,8 @@ Ab Android 10 werden Diagnosedateien lokal in Download/ShiftBell/log gespeichert
 
 Einstellungen → Zusätzliche Funktionen → Diagnoseprotokoll per E-Mail senden erstellt einen .txt-Anhang im temporären Ordner der App. Du sendest ihn selbst in deiner E-Mail-App. Dabei erhält der Entwickler die Protokolldatei, deine Nachricht und deine Absenderadresse. ShiftBell greift nicht auf deine E-Mail-Kontoinformationen zu und versendet Protokolle nicht automatisch.
 
+Beginn, Ende und Bestätigungsstatus von Schlafaufzeichnungen werden ebenfalls auf deinem Gerät gespeichert. Wenn Schlaf & Erholung aktiviert ist, prüft die Schlafschätzung in regelmäßigen Abständen, ob der Bildschirm ausgeschaltet ist und das Gerät geladen wird. Die Verarbeitung erfolgt auf dem Gerät. Diese Beobachtungen und die Inhalte der Schlafaufzeichnungen werden nicht an einen Server gesendet.
+
 ### Nutzungsstatistiken (Google Firebase Analytics)
 
 Google Firebase Analytics erfasst Nutzungs- und Geräteinformationen, zum Beispiel App-Starts, Seitenaufrufe, App- und Betriebssystemversionen, Gerätemodell, ungefähre Region und eine Installationskennung. ShiftBell erfasst außerdem die Nutzung einzelner Funktionen, etwa das Ausschalten oder Verschieben eines Weckers, das Speichern einer Notiz oder das Erstellen einer Sicherung.
@@ -180,7 +212,11 @@ Diese Ereignisse enthalten keine Schichtnamen, Weckzeiten, Notiztexte oder sonst
 
 Zur Beurteilung der App-Zuverlässigkeit kann ShiftBell die Anzahl beobachteter Weckerplanungen, Weckerstarts, Aktualisierungen und Geräteneustarts sowie Kategorien von Berechtigungs- und Akkubeschränkungen und des Geräteherstellers an Google Firebase Analytics senden. Diese Statistiken enthalten keine ursprünglichen Diagnosedateien, Weckerkennungen oder Weckzeiten und keine Inhalte von Schichtplänen oder Notizen. Manche Beobachtungen werden erst beim nächsten Öffnen der App gesendet; das Berichtsdatum kann daher vom Ereignisdatum abweichen.
 
-### App-Updates
+Nutzungsstatistiken können Ereignisse zur Häufigkeit der Nutzung von Schlaffunktionen enthalten, jedoch weder Schlafbeginn und -ende noch die Inhalte der Schlafaufzeichnungen.
+
+### App- und Feiertagsaktualisierungen
+
+Wenn die Geräte-Locale südkoreanische Feiertage auswählt, liest die App gelegentlich ein öffentliches Firebase-Dokument mit Feiertagsänderungen, unabhängig von der Sprache der Oberfläche. Diese Anfragen enthalten keine Inhalte von Schichtplänen, Notizen oder Schlafaufzeichnungen.
 
 Die Verfügbarkeit von App-Updates wird über Google Play geprüft.
 
@@ -192,6 +228,8 @@ ShiftBell zeigt Bannerwerbung von Google AdMob. Das Werbe-SDK kann Gerätekennun
 
 Wenn das Einwilligungssystem von Google es verlangt, fragt die App nach deinen Werbepräferenzen. Sofern verfügbar, kannst du diese unter Datenschutz für Werbung in den Einstellungen prüfen. Wie Google diese Informationen verarbeitet, beschreibt die Datenschutzerklärung von Google.
 
+Auch die Inhalte der Schlafaufzeichnungen werden nicht in Werbeanfragen aufgenommen.
+
 ### Angeforderte Berechtigungen
 
 • Benachrichtigungen: Weckerstatus und Erinnerungen vor Weckern anzeigen.
@@ -201,6 +239,8 @@ Wenn das Einwilligungssystem von Google es verlangt, fragt die App nach deinen W
 Du kannst diese Berechtigungen in den Android-Einstellungen prüfen. Wenn du sie ablehnst, können Weckerbenachrichtigungen eingeschränkt sein oder Wecker nicht wie erwartet funktionieren.
 
 • Sperrbildschirm: Vollbildbenachrichtigungen erlauben, um den Wecker bei gesperrtem Telefon anzuzeigen.
+
+Wenn Schlaf & Erholung aktiviert ist, werden genaue Alarme auch für regelmäßige Prüfungen zur Schlafschätzung verwendet.
 
 ### Aufbewahrung und Löschung
 
@@ -218,6 +258,8 @@ Daten aus früheren Versionen können auf dem Gerät verbleiben, bis du sie lös
 
 Der Entwickler verwendet per E-Mail erhaltene Anfragen, Absenderadressen und Diagnoseanhänge zur Beantwortung von Anfragen und Untersuchung von Problemen und löscht sie innerhalb von 30 Tagen nach Klärung der Anfrage. Löschanfragen an lowvibe07@gmail.com werden unverzüglich bearbeitet. Für Kopien, die der E-Mail-Dienst gesondert aufbewahrt, gelten dessen Richtlinien.
 
+Sicherungen enthalten auch Schlafaufzeichnungen. Das Deaktivieren von Schlaf & Erholung oder das Ausblenden des Tabs löscht bereits gespeicherte Schlafaufzeichnungen nicht.
+
 ### Nicht für Kinder bestimmt
 
 Diese App richtet sich nicht an Kinder unter 14 Jahren. Wir erfassen wissentlich keine personenbezogenen Daten von Kindern.
@@ -227,17 +269,21 @@ Diese App richtet sich nicht an Kinder unter 14 Jahren. Wir erfassen wissentlich
 Bei Fragen zur App oder zum Datenschutz:
 lowvibe07@gmail.com
 
-### Koreanische Oberfläche und frühere Versionen
+### Frühere Versionen: Koreanische Oberfläche und frühere Versionen
 
-Einige Funktionen sind nur in der koreanischen Oberfläche verfügbar. Lokale Termine, Schlafdaten und Kontakte dieser Funktionen können nach einem Sprachwechsel auf dem Gerät verbleiben. Die automatische Schlafschätzung prüft Bildschirm- und Ladezustand nur lokal.
+Persönliche Termine und die Kontaktverwaltung bleiben auf die koreanische Oberfläche beschränkt. Gespeicherte Daten können nach einem Sprachwechsel auf dem Gerät verbleiben. Schlafaufzeichnungen und die lokale Schlafschätzung sind oben für Versionen beschrieben, die Schlaf & Erholung optional in weiteren Sprachen anbieten.
 
 Bei aktivierter Kalenderfreigabe in dieser Oberfläche oder in einer früheren Version speichert Firebase den Anzeigenamen und freigegebenen Schichtplan (Muster, Startdatum, Schichtfarben und Änderungen einzelner Tage) mit einer anonymen Kennung. Jeder mit dem Code oder Link kann ihn sehen. Notizen, Überstunden, Schlafdaten und Weckereinstellungen sind nicht enthalten. Beim Beenden der Freigabe wird die Entfernung der freigegebenen Inhalte angefordert; v2 kann Widerrufs- und Versionsmetadaten behalten, damit alte Übertragungen die Freigabe nicht wiederherstellen. Offline-Anfragen können sich verzögern; heruntergeladene Kopien lassen sich nicht zurückholen. Beende die Freigabe vor einer Neuinstallation: Eine neue anonyme Kennung kann das Löschen alter Freigaben aus der App verhindern. Hilfe: lowvibe07@gmail.com.
 
 Die koreanische Oberfläche liest öffentliche Feiertagskorrekturen aus Firebase ohne Schichtplaninhalte zu übermitteln. Erfolgreiche Aufrufe freigegebener Kalender im Web werden separat gezählt, ohne Freigabecodes oder Kontaktnamen in diesen Ereignissen. Funktionen und Datenverarbeitung hängen von der installierten Version und aktivierten Funktionen ab; diese Erklärung bedeutet nicht, dass die neue Version bereits verfügbar ist.
 
+Google Privacy Policy
+
 ## Português (Brasil)
 
-Última atualização: 12 de outubro de 2026.
+Os recursos disponíveis e o processamento de dados dependem da versão instalada e dos recursos ativados. Esta atualização da política não anuncia a conclusão do lançamento do aplicativo.
+
+Última atualização: 19 de outubro de 2026.
 
 Os dados de turnos e alarmes são armazenados no seu aparelho. O ShiftBell também usa serviços do Google para estatísticas de uso e publicidade. Esta política explica esses serviços e os arquivos locais.
 
@@ -249,6 +295,8 @@ No Android 10 ou superior, arquivos de diagnóstico são salvos localmente em Do
 
 Configurações → Recursos adicionais → Enviar log de diagnóstico por e-mail cria um anexo .txt na pasta temporária do app. Você conclui o envio no app de e-mail. Ao enviar, o desenvolvedor recebe o log, a mensagem que você escrever e seu endereço de e-mail remetente. O ShiftBell não acessa os dados da sua conta de e-mail nem envia logs automaticamente.
 
+O início, o fim e o estado de confirmação dos registros de sono também ficam no dispositivo. Com Sono e recuperação ativado, a estimativa de sono verifica periodicamente se a tela está desligada e se o dispositivo está carregando. O processamento ocorre no próprio dispositivo. Essas observações e o conteúdo dos registros de sono não são enviados a um servidor.
+
 ### Estatísticas de uso (Google Firebase Analytics)
 
 O Google Firebase Analytics coleta informações de uso e do aparelho, como aberturas do app, telas visitadas, versões do app e do sistema, modelo do aparelho, região aproximada e um identificador de instalação. O ShiftBell também registra o uso de recursos, como desligar ou adiar um alarme, salvar uma nota ou criar um backup.
@@ -257,7 +305,11 @@ Esses eventos não incluem nomes de turnos, horários de alarmes, textos de nota
 
 Para avaliar a confiabilidade do app, o ShiftBell pode enviar ao Google Firebase Analytics contagens de agendamentos, inícios e atualizações de alarmes e reinicializações do aparelho observados, categorias de restrições de permissões e bateria e uma categoria do fabricante do aparelho. Essas estatísticas não incluem arquivos originais de diagnóstico, identificadores ou horários de alarmes, nem o conteúdo de escalas e notas. Algumas observações são enviadas na próxima abertura do app, por isso a data do relatório pode ser diferente da data do evento.
 
-### Atualizações do app
+As estatísticas podem incluir eventos de contagem de uso dos recursos de sono, mas não incluem horários de início e fim nem o conteúdo dos registros de sono.
+
+### Atualizações do app e dos feriados
+
+Quando a configuração regional do dispositivo seleciona feriados da Coreia do Sul, o app consulta ocasionalmente um documento público do Firebase para atualizar os feriados, independentemente do idioma da tela. Essas consultas não incluem o conteúdo de escalas, notas ou registros de sono.
 
 A disponibilidade de atualizações do app é verificada pelo Google Play.
 
@@ -269,6 +321,8 @@ O ShiftBell exibe anúncios em banner do Google AdMob. O SDK de publicidade pode
 
 Quando exigido pelo sistema de consentimento do Google, o app solicita suas preferências de publicidade. Quando disponível, use Privacidade dos anúncios nas configurações para revisá-las. A política de privacidade do Google explica como essas informações são tratadas.
 
+O conteúdo dos registros de sono também não é incluído nas solicitações de anúncios.
+
 ### Permissões solicitadas pelo app
 
 • Notificações: mostrar o estado dos alarmes e lembretes antes de tocarem.
@@ -278,6 +332,8 @@ Quando exigido pelo sistema de consentimento do Google, o app solicita suas pref
 Você pode revisar essas permissões nas configurações do Android. Negá-las pode limitar as notificações ou impedir que os alarmes funcionem como esperado.
 
 • Tela de bloqueio: permitir notificações em tela cheia para mostrar a tela do alarme com o celular bloqueado.
+
+Com Sono e recuperação ativado, alarmes exatos também são usados para agendar verificações periódicas da estimativa de sono.
 
 ### Retenção e exclusão de dados
 
@@ -295,6 +351,8 @@ Dados criados em versões anteriores podem permanecer no aparelho até você apa
 
 O desenvolvedor usa as mensagens de suporte recebidas por e-mail, os endereços dos remetentes e os anexos de diagnóstico para responder às solicitações e investigar problemas, e os exclui em até 30 dias após a resolução da solicitação. Pedidos de exclusão enviados a lowvibe07@gmail.com são atendidos sem demora indevida. Cópias mantidas separadamente pelo serviço de e-mail seguem a política desse serviço.
 
+Os backups também contêm registros de sono. Desativar Sono e recuperação ou ocultar a aba não exclui registros de sono já salvos.
+
 ### Não destinado a crianças
 
 Este app não é destinado a menores de 14 anos, e não coletamos intencionalmente informações pessoais de crianças.
@@ -304,17 +362,21 @@ Este app não é destinado a menores de 14 anos, e não coletamos intencionalmen
 Para suporte do app ou dúvidas sobre privacidade:
 lowvibe07@gmail.com
 
-### Interface em coreano e versões anteriores
+### Versões anteriores: Interface em coreano e versões anteriores
 
-Alguns recursos estão disponíveis apenas na interface em coreano. Eventos, registros de sono e contatos locais desses recursos podem permanecer no aparelho após a troca de idioma. A estimativa automática de sono verifica o estado da tela e do carregamento apenas no aparelho.
+Os compromissos pessoais e a gestão de contatos continuam específicos da interface em coreano. Os dados salvos podem permanecer no dispositivo após a mudança de idioma. Os registros e a estimativa local de sono são descritos acima para versões que oferecem Sono e recuperação opcional em mais idiomas.
 
 Se você ativar o compartilhamento de escala nessa interface ou o tiver usado em uma versão anterior, o Firebase armazena o nome de exibição e a escala compartilhada (padrão, data inicial, cores dos turnos e alterações por data) com um identificador anônimo. Qualquer pessoa com o código ou link pode visualizá-la. Notas, horas extras, registros de sono e configurações de alarmes não são incluídos. Interromper o compartilhamento solicita a remoção do conteúdo; a versão v2 pode manter metadados de revogação e versão para impedir que envios antigos o restaurem. Solicitações offline podem demorar; cópias já baixadas não podem ser recolhidas. Interrompa o compartilhamento antes de reinstalar: um novo identificador anônimo pode impedir a exclusão dos dados antigos pelo app. Ajuda: lowvibe07@gmail.com.
 
 A interface em coreano consulta correções públicas de feriados no Firebase sem incluir o conteúdo da escala. Visualizações bem-sucedidas do calendário compartilhado na web são contadas separadamente, sem códigos de compartilhamento ou nomes de contatos nesses eventos. Os recursos e o tratamento dos dados dependem da versão instalada e dos recursos ativados; esta política não significa que a nova versão já esteja disponível.
 
+Google Privacy Policy
+
 ## हिन्दी
 
-अंतिम अपडेट: 12 अक्टूबर 2026।
+उपलब्ध सुविधाएँ और डेटा का उपयोग इंस्टॉल किए गए संस्करण और चालू सुविधाओं पर निर्भर करते हैं। इस नीति का अपडेट ऐप का नया संस्करण जारी हो जाने की घोषणा नहीं है।
+
+अंतिम अपडेट: 19 अक्टूबर 2026।
 
 आपकी शिफ्ट और अलार्म का डेटा आपके डिवाइस पर सेव होता है। ShiftBell इस्तेमाल के आंकड़ों और विज्ञापनों के लिए Google की सेवाएं भी इस्तेमाल करता है। यह नीति इन सेवाओं और स्थानीय फ़ाइलों की जानकारी देती है।
 
@@ -326,6 +388,8 @@ Android 10 या नए संस्करण पर समस्या जा�
 
 सेटिंग → अतिरिक्त सुविधाएँ → जांच का लॉग ईमेल से भेजें से ऐप के अस्थायी फ़ोल्डर में .txt संलग्नक बनता है। ईमेल ऐप में आप खुद संदेश भेजते हैं। ईमेल भेजने पर डेवलपर को लॉग फ़ाइल, आपका लिखा संदेश और भेजने वाला ईमेल पता मिलता है। ShiftBell आपके ईमेल खाते की जानकारी नहीं देखता और लॉग अपने आप नहीं भेजता।
 
+नींद की शुरुआत, अंत और पुष्टि की स्थिति भी आपके डिवाइस पर सहेजी जाती है। नींद और रिकवरी चालू होने पर, नींद का अनुमान लगाने के लिए समय-समय पर स्क्रीन बंद होने और चार्जिंग की स्थिति जाँची जाती है। यह प्रक्रिया डिवाइस पर ही होती है। इन अवलोकनों और नींद के रिकॉर्ड की सामग्री को किसी सर्वर पर नहीं भेजा जाता।
+
 ### इस्तेमाल के आंकड़े (Google Firebase Analytics)
 
 Google Firebase Analytics ऐप खोलने, स्क्रीन देखने, ऐप और ऑपरेटिंग सिस्टम के संस्करण, डिवाइस मॉडल, अनुमानित क्षेत्र और इंस्टॉलेशन पहचानकर्ता जैसी जानकारी इकट्ठा करता है। ShiftBell अलार्म बंद करने या स्नूज़ करने, नोट सेव करने और बैकअप बनाने जैसी सुविधाओं के इस्तेमाल के रिकॉर्ड भी भेजता है।
@@ -334,7 +398,11 @@ Google Firebase Analytics ऐप खोलने, स्क्रीन दे�
 
 ऐप की विश्वसनीयता जांचने के लिए ShiftBell, Google Firebase Analytics को अलार्म शेड्यूल होने, शुरू होने, अपडेट होने और डिवाइस रीस्टार्ट होने की दर्ज घटनाओं की गिनती, अनुमति और बैटरी प्रतिबंधों की श्रेणियां तथा डिवाइस निर्माता की श्रेणी भेज सकता है। इन आंकड़ों में मूल डायग्नोस्टिक फाइलें, अलार्म पहचानकर्ता या समय, शेड्यूल और नोट की सामग्री शामिल नहीं होती। कुछ रिकॉर्ड अगली बार ऐप खोलने पर भेजे जाते हैं, इसलिए रिपोर्ट की तारीख घटना की तारीख से अलग हो सकती है।
 
-### ऐप अपडेट
+आँकड़ों में नींद की सुविधाओं के उपयोग की गिनती वाले इवेंट शामिल हो सकते हैं, लेकिन नींद की शुरुआत और अंत के समय या नींद के रिकॉर्ड की सामग्री शामिल नहीं होती।
+
+### ऐप और छुट्टियों के अपडेट
+
+डिवाइस की क्षेत्रीय सेटिंग से दक्षिण कोरिया की छुट्टियाँ चुने जाने पर, ऐप स्क्रीन की भाषा से अलग समय-समय पर छुट्टियों के अपडेट के लिए Firebase का एक सार्वजनिक दस्तावेज़ पढ़ता है। इन अनुरोधों में शेड्यूल, नोट या नींद के रिकॉर्ड की सामग्री शामिल नहीं होती।
 
 ऐप अपडेट की उपलब्धता Google Play से जांची जाती है।
 
@@ -346,6 +414,8 @@ ShiftBell में Google AdMob के बैनर विज्ञापन �
 
 जहां Google की सहमति प्रणाली के अनुसार ज़रूरी हो, ऐप विज्ञापनों के बारे में आपकी पसंद पूछता है। उपलब्ध होने पर सेटिंग में विज्ञापन की निजता सेटिंग से अपनी पसंद देख या बदल सकते हैं। Google इस जानकारी का उपयोग कैसे करता है, यह उसकी निजता नीति में बताया गया है।
 
+नींद के रिकॉर्ड की सामग्री भी विज्ञापन अनुरोधों में शामिल नहीं होती।
+
 ### ऐप को किन अनुमतियों की ज़रूरत है
 
 • सूचनाएं: अलार्म की स्थिति और पहले से याद दिलाने वाली सूचना दिखाने के लिए।
@@ -355,6 +425,8 @@ ShiftBell में Google AdMob के बैनर विज्ञापन �
 Android की सेटिंग में ये अनुमतियां देख सकते हैं। अनुमति न देने पर अलार्म की सूचनाएं सीमित हो सकती हैं या अलार्म अपेक्षा के अनुसार काम नहीं कर सकते।
 
 • लॉक स्क्रीन: फ़ोन लॉक होने पर अलार्म स्क्रीन दिखाने के लिए फ़ुल-स्क्रीन सूचनाओं की अनुमति।
+
+नींद और रिकवरी चालू होने पर, नींद के अनुमान की नियमित जाँच तय करने के लिए भी सटीक अलार्म का उपयोग होता है।
 
 ### डेटा रखना और हटाना
 
@@ -372,6 +444,8 @@ Android की सेटिंग में ये अनुमतियां �
 
 डेवलपर ईमेल से मिले सहायता संदेशों, भेजने वाले के ईमेल पते और डायग्नोस्टिक अटैचमेंट का उपयोग सवालों के जवाब देने और समस्याओं की जांच के लिए करता है। इन्हें समस्या का समाधान होने के 30 दिनों के भीतर हटा दिया जाता है। lowvibe07@gmail.com पर मिले हटाने के अनुरोधों पर बिना अनावश्यक देरी के कार्रवाई की जाती है। ईमेल सेवा द्वारा अलग से रखी गई प्रतियों पर उस सेवा की नीति लागू होती है।
 
+बैकअप में नींद के रिकॉर्ड भी शामिल होते हैं। नींद और रिकवरी बंद करने या उसका टैब छिपाने से पहले से सहेजे गए नींद के रिकॉर्ड नहीं मिटते।
+
 ### बच्चों के लिए नहीं है
 
 यह ऐप 14 साल से कम उम्र के बच्चों के लिए नहीं है। हम जानबूझकर बच्चों की निजी जानकारी इकट्ठा नहीं करते।
@@ -381,10 +455,12 @@ Android की सेटिंग में ये अनुमतियां �
 ऐप में मदद या निजता से जुड़े सवालों के लिए:
 lowvibe07@gmail.com
 
-### कोरियाई इंटरफेस और पुराने संस्करण
+### पुराने संस्करण: कोरियाई इंटरफेस और पुराने संस्करण
 
-कुछ सुविधाएं केवल कोरियाई इंटरफेस में उपलब्ध हैं। भाषा बदलने के बाद भी उन सुविधाओं के स्थानीय इवेंट, नींद के रिकॉर्ड और संपर्क डिवाइस पर रह सकते हैं। अपने आप नींद का अनुमान लगाने की सुविधा स्क्रीन और चार्जिंग की स्थिति केवल डिवाइस पर जांचती है।
+निजी कार्यक्रम और संपर्क प्रबंधन कोरियाई इंटरफ़ेस तक सीमित रहते हैं। भाषा बदलने के बाद भी उनका सहेजा गया डेटा डिवाइस पर रह सकता है। अधिक भाषाओं में वैकल्पिक नींद और रिकवरी देने वाले संस्करणों के लिए नींद के रिकॉर्ड और डिवाइस पर नींद के अनुमान का विवरण ऊपर दिया गया है।
 
 इस इंटरफेस में या पुराने संस्करण में शेड्यूल साझा करने पर Firebase, दिखाया जाने वाला नाम और साझा शिफ्ट शेड्यूल (पैटर्न, शुरू होने की तारीख, शिफ्ट के रंग और तारीख के अनुसार बदलाव) एक अनाम पहचानकर्ता के साथ सेव करता है। कोड या लिंक वाला कोई भी व्यक्ति इसे देख सकता है। नोट, ओवरटाइम, नींद के रिकॉर्ड और अलार्म सेटिंग शामिल नहीं होते। साझा करना बंद करने पर साझा सामग्री हटाने का अनुरोध भेजा जाता है; v2 पुराने अपलोड से साझा सामग्री दोबारा बहाल होने से रोकने के लिए रोकने की स्थिति और संस्करण का न्यूनतम मेटाडेटा रख सकता है। ऑफलाइन अनुरोधों में देरी हो सकती है और डाउनलोड की गई प्रतियां वापस नहीं ली जा सकतीं। दोबारा इंस्टॉल करने से पहले साझा करना बंद करें: नया अनाम पहचानकर्ता बनने पर ऐप से पुराने साझा डेटा को हटाना संभव नहीं हो सकता। सहायता: lowvibe07@gmail.com।
 
 कोरियाई इंटरफेस Firebase से सार्वजनिक छुट्टियों के सुधार पढ़ता है; इस अनुरोध में शेड्यूल की सामग्री शामिल नहीं होती। वेब पर साझा कैलेंडर सफलतापूर्वक खोले जाने की गिनती अलग से की जाती है; इन इवेंट में शेयर कोड या संपर्कों के नाम नहीं होते। सुविधाएं और डेटा का उपयोग इंस्टॉल किए गए संस्करण और चालू सुविधाओं पर निर्भर करते हैं; इस नीति का अर्थ यह नहीं है कि नया संस्करण पहले से उपलब्ध है।
+
+Google Privacy Policy
